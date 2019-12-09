@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+	.literas>div {
+		width: 10vmin;
+		height: 10vmin;
+		float: left;
+
+	}
+
+	.chesstable {
+		width: calc(10vmin*8);
+		height: 80vmin;
+		margin: 10vmin;
+		outline: 1px solid black;
+	}
+
+	.chesstable>div:first-child>div {
+		float-left:10px;
+	}
+
+	.chesstable>div {
+		outline: 1px solid red;
+	}
+
+	.chesstable>div>div {
+		outline: 1px solid blue;
+	}
+    .chesstable>div:first-child>div:first-child::before{
+        content:"a";
+        display:block;
+        background-color:yellow;
+        width:10vmin;
+        height:10vmin;
+        margin-top:-100%;
+        line-height:10vmin;
+        text-align:center;
+        font-size:5vmin;
+
+    }
+    
+    
+    .chesstable>div:nth-child(8)>div:nth-child(1)::before{
+        content:"a";
+        display:block;
+        background-color:yellow;
+        width:10vmin;
+        height:10vmin;
+        margin-top:100%;
+        line-height:10vmin;
+        text-align:center;
+        font-size:5vmin;
+    }
+    
+    .chesstable>div:nth-child(-7n+8)>div::before{
+        content:"a";
+        display:block;
+        background-color:yellow;
+        width:10vmin;
+        height:10vmin;
+        margin-top:100%;
+        line-height:10vmin;
+        text-align:center;
+        font-size:5vmin;
+    }
+    .chesstable>div:nth-child(-7n+8)>div:nth-child(2)::before{
+        content:"b";
+    }
+    .chesstable>div:nth-child(-7n+8)>div:nth-child(3)::before{
+        content:"c";
+    }
+    .chesstable>div:nth-child(-7n+8)>div:nth-child(4)::before{
+        content:"d";
+    }
+    .chesstable>div:nth-child(-7n+8)>div:nth-child(5)::before{
+        content:"e";
+    }
+    .chesstable>div:nth-child(-7n+8)>div:nth-child(6)::before{
+        content:"f";
+    }
+    .chesstable>div:nth-child(-7n+8)>div:nth-child(7)::before{
+        content:"g";
+    }
+    .chesstable>div:nth-child(-7n+8)>div:nth-child(8)::before{
+        content:"h";
+    }
+    
+    .chesstable>div:first-child>div::before{
+        margin-top:-100%;
+
+    }
+    .chesstable>div:nth-child(1)::before,
+    .chesstable>div:nth-child(1)::after{
+        content::"1";
+
+    }
+    .chesstable>div::before,
+    .chesstable>div::after{
+        width:10vmin;
+        height:10vmin;
+        display:block;
+        background-color:orange;
+    }
+    .chesstable>div:nth-child(odd)>div:nth-child(odd),
+    .chesstable>div:nth-child(even)>div:nth-child(even){
+        background-color:black;
+    }
+</style>
+
+<body>
+	<div class="chesstable">
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+
+		</div>
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</body>
+<div class="chessTable">
+
+</html>

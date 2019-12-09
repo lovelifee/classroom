@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sprites</title>
+    <style>
+        body { 
+            margin: 0;
+        }
+        .figure {
+            width: 25%;
+            height: 65px;
+            padding-top:25%;
+            outline: 1px solid blue;
+            float: left;
+            background-color: green;
+            background-image: url("images/chess.png");
+            background-repeat: no-repeat;
+            background-size: 600% 200% ;
+            
+            
+        }
+        .white {
+            background-position-y: 100%;
+             }
+        .black {
+            background-position-y: 0;
+        }
+        .horse {
+            background-position-x: 83%;
+        }
+        .queen {
+            background-position-x: 0;
+        }
+    </style>
+</head>
+<body >
+    <div class="figure white horse"></div>
+    <div class="figure black horse"></div>
+    <div class="figure white queen"></div>
+    <div class="figure black queen"></div>
+</body>
+</html>

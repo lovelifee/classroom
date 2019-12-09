@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Фотогалерея</title>
+</head>
+<style>
+	input {
+		display: none;
+	}
+	.slide>img {
+		width: 200px;
+        height: 200px;
+	}
+	.nextSlide,
+	.prevSlide {
+		position: absolute;
+		border: 20px solid transparent;
+		top: 90px;
+		display: block;
+	}
+	.nextSlide {
+		left: 180px;
+		border-left: 20px solid red;
+	}
+	.prevSlide {
+		left: -20px;
+		border-right: 20px solid red;
+	}
+	.slide {
+		position: relative;
+		display: none;
+		border-radius: 5px;
+		overflow: hidden;
+		width: 400px;
+	}
+	#one:checked~div>.slide:nth-child(1),
+	#two:checked~div>.slide:nth-child(2),
+	#three:checked~div>.slide:nth-child(3),
+	#four:checked~div>.slide:nth-child(4),
+	#five:checked~div>.slide:nth-child(5) 
+    {
+		display: block;
+	}
+	#slider {
+		position: absolute;
+	}
+	.pins {
+		position: relative;
+		bottom: 5px;
+		left: 60px;
+	}
+	.pins>label {
+		display: inline-block;
+		width: 15px;
+		height: 10px;
+		border-radius: 40px;
+		background-color:rgb(156,50,67);
+	}
+	#one:checked~div>.pins :nth-child(1),
+	#two:checked~div>.pins :nth-child(2),
+	#three:checked~div>.pins :nth-child(3),
+	#four:checked~div>.pins :nth-child(4),
+	#five:checked~div>.pins :nth-child(5) {
+		background-color: red;
+	}
+</style>
+<body>
+	<h1>добавить стили и расставить for и src так, чтобы работала фотогаллерея</h1>
+	<form action="handler.php">
+		<input type="radio" name="pos1" id="one" checked>
+		<input type="radio" name="pos1" id="two">
+		<input type="radio" name="pos1" id="three">
+		<input type="radio" name="pos1" id="four">
+		<input type="radio" name="pos1" id="five">
+		<div id="slider">
+			<section class="slide">
+				<img src="noch.jpg">
+				<label for="five" class="prevSlide"></label>
+				<label for="two" class="nextSlide"></label>
+			</section>
+			<section class="slide">
+				<img src="1234.jpg">
+				<label for="one" class="prevSlide"></label>
+				<label for="three" class="nextSlide"></label>
+			</section>
+			<section class="slide">
+				<img src="12345.jpg">
+				<label for="two" class="prevSlide"></label>
+				<label for="four" class="nextSlide"></label>
+			</section>
+			<section class="slide">
+				<img src="download.jpg">
+				<label for="three" class="prevSlide"></label>
+				<label for="five" class="nextSlide"></label>
+			</section>
+			<section class="slide">
+				<img src="download(1).jpg">
+				<label for="four" class="prevSlide"></label>
+				<label for="one" class="nextSlide"></label>
+			</section>
+			<div class="pins">
+				<label for="one"></label>
+				<label for="two"></label>
+				<label for="three"></label>
+				<label for="four"></label>
+				<label for="five"></label>
+			</div>
+		</div>
+</body>
+</html>

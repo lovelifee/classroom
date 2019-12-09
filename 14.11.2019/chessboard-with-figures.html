@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chessboard with figures</title>
+</head>
+<style>
+	body {}
+
+[title]{
+    background-image:url(images/chess.png);
+
+}
+	.odd>div,
+	.even>div,
+	.literas>div {
+		width: 10vmin;
+		height: 10vmin;
+		float: left;
+        
+
+	}
+
+	.chessboard>div {
+		height: 10vmin;
+        
+    }
+    .literas>div,
+     .numbers{
+         line-height:10vmin;
+         text-align:center;
+         
+     }
+     .literas+div+div~div>[title]
+     { background-position-y:100%;
+     }}
+
+.chessboard>div>div{
+    outline:1px solid red
+    
+}
+.chessboard>.literas>div{
+    outline:none;}
+   
+
+ .chessboard>div>div.numbers
+ {
+
+}
+     .even>.numbers+div+div,
+     .even>.numbers+div+div+div+div,
+     .even>.numbers+div+div+div+div+div+div,
+     .even>.numbers+div+div+div+div+div+div+div+div,
+     
+
+	.odd>.numbers+div,
+	.odd>.numbers+div+div+div,
+    .odd>.numbers+div+div+div+div+div,
+    .odd>.numbers+div+div+div+div+div+div+div
+
+    {
+		background-color: red}
+        
+	}
+</style>
+
+<body>
+	<div class="chessboard">
+		<div class="literas">
+			<div></div>
+			<div>a</div>
+			<div>b</div>
+			<div>c</div>
+			<div>d</div>
+			<div>e</div>
+			<div>f</div>
+			<div>g</div>
+			<div>h</div>
+			<div></div>
+		</div>
+		<div class="odd">
+			<div class="numbers">1</div>
+			<div title="castle"></div>
+			<div title="horse"></div>
+			<div title="elefant"></div>
+			<div title="king"></div>
+			<div title="queen"></div>
+			<div title="elefant"></div>
+			<div title="horse"></div>
+			<div title="castle"></div>
+			<div class="numbers">1</div>
+		</div>
+		<div class="even">
+			<div class="numbers">2</div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div class="numbers">2</div>
+		</div>
+		<div class="odd">
+			<div class="numbers">3</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">3</div>
+		</div>
+		<div class="even">
+			<div class="numbers">4</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">4</div>
+		</div>
+		<div class="odd">
+			<div class="numbers">5</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">5</div>
+		</div>
+		<div class="even">
+			<div class="numbers">6</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="numbers">6</div>
+		</div>
+		<div class="odd">
+			<div class="numbers">7</div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div title="pawn"></div>
+			<div class="numbers">7</div>
+		</div>
+		<div class="even">
+			<div class="numbers">8</div>
+			<div title="castle"></div>
+			<div title="horse"></div>
+			<div title="elefant"></div>
+			<div title="king"></div>
+			<div title="queen"></div>
+			<div title="elefant"></div>
+			<div title="horse"></div>
+			<div title="castle"></div>
+			<div class="numbers">8</div>
+		</div>
+		<div class="literas">
+			<div></div>
+			<div>a</div>
+			<div>b</div>
+			<div>c</div>
+			<div>d</div>
+			<div>e</div>
+			<div>f</div>
+			<div>g</div>
+			<div>h</div>
+			<div></div>
+		</div>
+	</div>
+</body>
+<div class="chessTable">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+</html>
